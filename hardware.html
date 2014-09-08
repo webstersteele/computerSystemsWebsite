@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<!-- Steele-->
+	<head>
+		<script type="text/javascript">
+          
+            function updateClock() {
+                var clock = new Date();
+ 
+                
+                var hours = clock.getHours();
+                var minutes = clock.getMinutes();
+                var seconds = clock.getSeconds();
+ 
+               
+                if (hours < 10) {
+                    hours = "0" + hours;
+                }
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
+                if (seconds < 10) {
+                    seconds = "0" + seconds;
+                }
+				if (hours > 12) {
+					hours = hours - 12;
+				}
+				
+                var display = document.getElementById('clock');
+ 
+                // Sets the elements inner HTML value to our clock data
+                display.innerHTML = hours + ':' + minutes + ':' + seconds;
+            }
+        </script>
+	
+		<link type="text/css" rel="stylesheet" href="cssmain.css">
+		<title>
+			Hardware
+		</title>
+	
+	</head>
+	
+	<body onload="setInterval('updateClock()', 200);">
+		
+		<ul >
+			<li> <h2 id="header"> Webster Steele </h2> </li>
+			<li> <h2 id ="header"> Computer Systems </h2> </li>
+			<li> <h2 id="clock"></h2> </li>
+		</ul>
+		
+		<ul id= "side"> 
+			<li> <a id="menu" href="main.html">Home</a> </li>
+			<li> <a id="menu" href="hardware.html">Hardware</a> </li>
+			<li> <a id="menu" href="software.html">Software</a> </li>
+			<li> <a id="menu" href="issues.html">Issues in Computers</a> </li>
+		</ul>
+		
+		<div>
+		<h1> Hardware </h1>
+		<img src= "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmg39KfKeupZNQsLcb2h-NpX61YbpbLosRgQDo6zLT1ely13rpEw" />
+		<p> Computer hardware refers to the actual psychical components of a computer. Examples of computer hardware 
+		include the mouse, keyboard, monitor, hard drive and motherboard. All of these components can be physically touched. 
+		There are many different types of hardware that can be both inside and connected to the computer. 
+
+		Below is a diagram of a desktop computer including the major internal parts. </p>
+		<img src= "http://www.hdwallpaperspics.com/wp-content/uploads/2012/11/computer_diagram-fet.gif" />
+		
+		<h3> Storage </h3>
+		<img id = "storage" src= "http://www.digitaljournal.com/img/6/8/7/0/1/4/i/8/0/3/p-large/Data_Storage_Devices.jpg" />
+		<p> Computer data storage provides a basic function of all computers, data retention. Data can be stored on a number 
+		of different devices front hard disks, to memory sticks, to computer hardware. In most computers, combinations of 
+		different devices are used to store data. </p>
+		<h4> Hard Disks </h4>
+		<p> Most computers have one or more disk drives. These disk drives read medal plated disks that can be used to store 
+		music, photos, videos, software and documents. These disks are rapidly spinning and are read by a moving actuator 
+		arm within the computer. The main advantage of disk drives is that they are relatively permanent and store data even 
+		when the computer gets turned off. The other main advantage is that they are cheap to use and store data long term. 
+		In this new age of technology however, hard disk drives are slowly becoming replaced by flash memory because of ease 
+		of use. </p>
+		<h4> Memory </h4>
+		<p> Computer memory generally refers to the internal hardware within the computer that is used to store data. These 
+		types of memory can generally be divided into two categories, primary memory and secondary memory. Primary memory 
+		is faster but more expensive and is the main access point between memory and the central computer. The main device 
+		used in primary memory is that Random Access Memory or RAM. This device, like all types of primary memory loose 
+		data when the computer is turned off. Secondary memory on the other hand is slower and less expensive but is used for 
+		the long term storage of data. This means that unlike primary storage, secondary storage doesn’t lose memory when the 
+		device is turned off. Also unlike primary memory, secondary storage is not directly connected to the central computer. 
+		Instead, the secondary storage is linked through primary storage. </p>
+		<h4> Cloud Computing </h4>
+		<p> Cloud computing is a type of networking in which network-based services are commonly used. The cloud uses 
+		virtual hardware that does not affect the end user. In most cases third parties operate large data centers which can 
+		be used to store files and other data objects. This data storage is then accessed over the internet and can be 
+		seamlessly be accessed through multiple devices. Cloud computing is still in its early stages however companies like 
+		Apple, Google and Amazon are already market leaders in this industry. </p>
+		
+		<h3> Processor </h3> 
+		<p> The computer processor, formally called the Computer Processing Unit or CPU, is the hardware within a computer 
+		that carries out the computer software’s instructions. It does this by carrying out basic logistical and arithmetical 
+		operations. It is possible for a computer to have more than one processor, these computers are multiprocessing. Most 
+		modern processors however only use one chip, this is called a microprocessor. If a computer does have more than one 
+		chip however, it is called a multi-core processor.   </p>
+		
+		<h3> Peripherals </h3>
+		<img id = "peripherals" src= "http://2.imimg.com/data2/LR/JP/MY-3321689/computer-peripheral-500x500.jpg" />
+		<p> A peripheral is a device which is connected to a host computer for function. These devices aren’t part of the 
+		computer but extend its capabilities. Peripherals can be broken down into three main types input, output and storage. 
+		An input peripheral is used to interact with and send data to the computer. Two common examples are a mouse or a 
+		keyboard. An output peripheral device is a device that is used to display data to the user, such as a monitor or printer. 
+		The input and output to a computer is not limited to humans however, in many cases the input received by a computer 
+		can be from another computer or other data device. One example of this is the computers interactions with the host 
+		internet server. Finally, storage peripherals are the third type of peripheral devices and are used to store data from the 
+		computer. This category includes flash drives and hard disks. </p>   
+		
+		<h3>Networking</h3>
+		<p> A computer network uses telecommunications to transfer data between computers. In a network data can be shared 
+		between computers and access to devices, such as a printer, as well as other resources. The most common network in 
+		the world is the Internet. Other networks are used in large businesses as well as connecting personal computers in 
+		homes. <br> <br> There are two main types of computer networks used for different purposes. The first type of network is a peer to peer 
+		network and is commonly used in homes. In this network all of the computers are equal and are treated as their own 
+		entities. In this network each of the computers are connected by a router. The computers share all of the resources 
+		equally including printers, scanners, ect. <br> <br> The second type of network is mostly used in businesses and organizations. This type of network is called a 
+		client-server network. The server computer controls the client computers and initiate all recourse flow. The client 
+		computer controls the access to the other computers and controls their resources.    
+		</p>
+		</div>
+		
+	</body>
+
+</html>
