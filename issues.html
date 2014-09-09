@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<!-- Steele-->
+	<head>
+		<script type="text/javascript">
+          
+            function updateClock() {
+                var clock = new Date();
+ 
+                
+                var hours = clock.getHours();
+                var minutes = clock.getMinutes();
+                var seconds = clock.getSeconds();
+ 
+               
+                if (hours < 10) {
+                    hours = "0" + hours;
+                }
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
+                if (seconds < 10) {
+                    seconds = "0" + seconds;
+                }
+				if (hours > 12) {
+					hours = hours - 12;
+				}
+				
+                var display = document.getElementById('clock');
+ 
+                // Sets the elements inner HTML value to our clock data
+                display.innerHTML = hours + ':' + minutes + ':' + seconds;
+            }
+        </script>
+	
+		<link type="text/css" rel="stylesheet" href="cssmain.css">
+		<title>
+			Issues in Computers
+		</title>
+	
+	</head>
+	
+	<body onload="setInterval('updateClock()', 200);">
+		
+		<ul >
+			<li> <h2 id="header"> Webster Steele </h2> </li>
+			<li> <h2 id ="header"> Computer Systems </h2> </li>
+			<li> <h2 id="clock"></h2> </li>
+		</ul>
+		
+		<ul id= "side"> 
+			<li> <a id="menu" href="main.html">Home</a> </li>
+			<li> <a id="menu" href="hardware.html">Hardware</a> </li>
+			<li> <a id="menu" href="software.html">Software</a> </li>
+			<li> <a id="menu" href="issues.html">Issues in Computers</a> </li>
+		</ul>
+		
+		
+		<div>
+		<h1> Issues in Computers </h1>
+		
+		<img src="http://2.bp.blogspot.com/-pSr750Re2Fk/UI53v-LjdZI/AAAAAAABE-8/Wd9X7YXHHNY/s1600/computer+Issues.jpg" />
+		
+		<h3> Computers and the Environment </h3>
+		<embed
+		width="420" height="345"
+		src="http://www.youtube.com/watch?v=YqqC--LxAyY"
+		type="application/x-shockwave-flash">
+		</embed>
+		
+		<p>Many of today'\s technologies have a large effect on the environment through their production, use and disposal. Despite 
+		this many people believe the exact opposite. Computers are at least built to save paper right? In fact the opposite is true.
+		In a study done by the United Nations 240 kilos of fossil fuels, 22 kilos of chemicals and 1,500 kilos of water are used in 
+		the production of the average desktop computer. In addition to these, many hazardous wastes are used in the computers. 
+		Examples of these are lead, arsenic, selenium, cadmium, cobalt and mercury, among others. After the short lifespan of 
+		computers as a result of constantly updated technology these hazardous materials become very unsafe for  </p>
+		<img id = "environment" src="http://www.warepin.com/wp-content/uploads/2011/12/Computers-Impact-on-the-Environment.jpg" />
+		<p> the environment. Over time in a landfill these materials contaminate our water supply, the plant environment and animals. 
+		When we absorb these materials into our bodies devastating effects can take place.  However, new programs are being 
+		put in place to recycle old computers in an environmentally friendly way. These programs are leading a wave of 
+		environmental causes related to computers are helping to lessen the environmental burden caused by computers.
+		</p>
+		
+		<h3> Computer Ethics </h3>
+		<img id = "ethics" src="http://www.secuproducts.nl/contents/pages/00001107/dief.jpg" />
+		<p>Computer ethics are moral principles that govern and regulate the use of computers. Common areas of ethical conduct 
+		include property rights, privacy concerns and how computers affect society. In the area of property rights copyright and 
+		plagiarism takes effect. Proper credit must be given when material and information is taken from other authors. In an area 
+		of privacy rights it is unethical to obtain personal data from computer sources. Websites are now required to provide a 
+		legal privacy policy when obtaining any personal data. This policy outlines the way that a company, gathers, uses, and 
+		discloses and managers a customer’s information. As computer technology continues to advance however, the 
+		discussion of how much influence computers have in of artificial intelligence, human communication and other areas 
+		take place. As these and other issues arise the computer world will continue to create more ethics for this and other 
+		new technologies. 
+		</p>
+		
+		<h3> Health Issues Related to Computers </h3>
+		<p> Computer have increasingly become a part of everyday life for those of us in the first world. In fact, a recent study 
+		suggested that around 85 percent of Americans spend time each day on the computer. With this increase of computer 
+		usage also comes a variety of both short and long term health problems for computer users. <br><br> One of 
+		these main problems are sleep disorders caused from working in bed late at night or early in the morning. These habits 
+		can cause insomnia or often awakening during the night. Sleeping disorders aren't the only type of health problems 
+		caused by the working environment however. A variety of problems from head aches to back pain can come as a result of 
+		surroundings. Lighting, screen position, chair position and even glasses can be the cause of these problems. To solve 
+		these problems experts recommend frequent breaks about once every hour. They also recommend checking your posture 
+		and the position of your keyboard and mouse to insure decrease health risks.     
+		</div>
+		
+	</body>
+
+</html>Enter file contents here
