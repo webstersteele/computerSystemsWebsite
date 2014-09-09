@@ -1,0 +1,99 @@
+/*steele*/
+
+body {
+	background-color: #2BBBD8;
+	font-family: Arial;
+	color: #FFFFFF;
+	width: 1200 px;
+}
+	
+h1 {
+	color: #FCD271;
+	font-style: bold;
+	text-decoration:underline
+}
+
+h3 {
+	text-decoration:underline
+}
+
+div {
+margin-left: 190px;
+background-color: #F78D3F;
+text-align: center
+}
+
+p {
+	font-size: 20px;
+	background-color: #F78D3F;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+#menu {
+margin-left: 0;
+display: block;
+width: 160px;
+color:  #FFFFFF;
+background-color: #102E37;
+padding: 10px; 
+font-size: 18px;
+}
+
+
+#side {
+float: left;
+position: relative;
+top: 20pxpx;
+}
+
+#header {
+	float: left;
+	color:  #FFFFFF;
+	background-color: #102E37;
+	padding: 10px; 
+	font-size: 18px;
+	display: block;
+	width: 400px;
+}
+
+#clock {
+	float: left;
+	color:  #FFFFFF;
+	background-color: #102E37;
+	padding: 10px; 
+	font-size: 18px;
+	display: block;
+	width: 350px;
+	text-align: left;
+}
+
+#environment {
+	float: left;
+	width: 300px;
+	height: 250px;
+}
+
+#ethics {
+	float: right;
+}
+
+#languages{
+	float: right;
+	height: 200px;
+	width: 300px00px;
+}
+
+#storage{
+	float: right;
+	height: 300px00px;
+	width: 400px;
+}
+
+#peripherals{
+	float: left;
+}
+
