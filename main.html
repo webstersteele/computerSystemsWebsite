@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!-- Steele-->
+	<head>
+		<script type="text/javascript">
+          
+            function updateClock() {
+                var clock = new Date();
+ 
+                
+                var hours = clock.getHours();
+                var minutes = clock.getMinutes();
+                var seconds = clock.getSeconds();
+ 
+               
+                if (hours < 10) {
+                    hours = "0" + hours;
+                }
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
+                if (seconds < 10) {
+                    seconds = "0" + seconds;
+                }
+				if (hours > 12) {
+					hours = hours - 12;
+				}
+				
+                var display = document.getElementById('clock');
+ 
+                // Sets the elements inner HTML value to our clock data
+                display.innerHTML = hours + ':' + minutes + ':' + seconds;
+            }
+        </script>
+	
+		<link type="text/css" rel="stylesheet" href="cssmain.css">
+		<title>
+			Computer Systems
+		</title>
+	
+	</head>
+	
+	<body onload="setInterval('updateClock()', 200);">
+		
+		<ul >
+			<li> <h2 id="header"> Webster Steele </h2> </li>
+			<li> <h2 id ="header"> Computer Systems </h2> </li>
+			<li> <h2 id="clock"></h2> </li>
+		</ul>
+		
+		<ul id= "side"> 
+			<li> <a id="menu" href="main.html">Home</a> </li>
+			<li> <a id="menu" href="hardware.html">Hardware</a> </li>
+			<li> <a id="menu" href="software.html">Software</a> </li>
+			<li> <a id="menu" href="issues.html">Issues in Computers</a> </li>
+		</ul>
+		
+		<div>
+		
+		<h1> Computer Systems Website </h1>
+		<img  src = "http://fixyourcomputer.ca/wp-content/uploads/2012/05/ComputerSpecial.jpg" />
+		<p> A computer is defined as a programmable device used to carry out arithmetic or logical operations. Computers are 
+		able to solve multiple problems as these operations can be changed and altered to serve a specific purpose. </p>
+		
+		<h3> Code Systems </h3>
+		<img  id ="environment" src ="http://www.proactiveinvestors.com/genera//img/companies/news/computer_code_350_51b0dc7f91da8.jpg"/>
+		<p> Code systems are a systems of signals that represent letters and numbers, such as Morse code. Code systems are 
+		often used in transmitting messages. In computers code systems are found as part of the computer program. </p>
+		
+		<h3> Binary Code </h5>
+		<p> The binary code system is a low level language used by computers. It is a base 2 
+		number system, meaning that it only uses two digits, 1 and 0. In this system each
+		individual digit is called a bit and 8 bits are called a bite. To count in the binary system 
+		the bit 0 is started with then proceeded with 1 before adding another bit. For example 
+		the number 9 would be represented by 1001. </p>   
+			
+		<h3> Decimal Number System </h5> 
+		<p> The decimal number system is the system most commonly used in mathematics 
+		and everyday general life. This is a base 10 number system using the digits 0, 1, 2, 3, 4, 
+		5, 6, 7, 8 and 9. </p>
+
+		<h3> Hexadecimal Number System </h5>
+		<p> The hexadecimal number system is a translation language between Binary and Decimal systems. It is a base 16 
+		system that uses the digits 0 to 9, A, B, C, D, E and F. 
+		
+		<img  id ="languages" src ="http://scbw.com/images/upload/services_19.jpg"/>
+		<h3> Programming Languages </h3> 
+		<p> A programming language is a language made to give instructions to parts of computer hardware. Programming 
+		languages are used to create programs that affects the computers behaviour, and expresses algorithms. Thousands 
+		of different programming languages have been created and many more are being created every year. Common examples 
+		of languages are JAVA, C, Perl and Python.   
+		</p>
+		
+		
+		</div>
+		
+	</body>
+
+</html>
