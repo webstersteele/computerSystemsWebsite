@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<!-- Steele-->
+	<head>
+		<script type="text/javascript">
+          
+            function updateClock() {
+                var clock = new Date();
+ 
+                
+                var hours = clock.getHours();
+                var minutes = clock.getMinutes();
+                var seconds = clock.getSeconds();
+ 
+               
+                if (hours < 10) {
+                    hours = "0" + hours;
+                }
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
+                if (seconds < 10) {
+                    seconds = "0" + seconds;
+                }
+				if (hours > 12) {
+					hours = hours - 12;
+				}
+				
+                var display = document.getElementById('clock');
+ 
+                // Sets the elements inner HTML value to our clock data
+                display.innerHTML = hours + ':' + minutes + ':' + seconds;
+            }
+        </script>
+	
+		<link type="text/css" rel="stylesheet" href="cssmain.css">
+		<title>
+			Software
+		</title>
+	
+	</head>
+	
+	<body onload="setInterval('updateClock()', 200);">
+		
+		<ul >
+			<li> <h2 id="header"> Webster Steele </h2> </li>
+			<li> <h2 id ="header"> Computer Systems </h2> </li>
+			<li> <h2 id="clock"></h2> </li>
+		</ul>
+		
+		<ul id= "side"> 
+			<li> <a id="menu" href="main.html">Home</a> </li>
+			<li> <a id="menu" href="hardware.html">Hardware</a> </li>
+			<li> <a id="menu" href="software.html">Software</a> </li>
+			<li> <a id="menu" href="issues.html">Issues in Computers</a> </li>
+		</ul>
+		
+		<div>
+		<h1>Software </h1>
+		<img src="http://readwrite.com/files/styles/630_0su/public/fields/app-icons-apple-app-store_0.jpg" />
+		<p> Computer software is the non-physical component of the computer. All computer software or computer programs 
+		are purely information that cannot be touched. The purpose of computer software is to give the <a href="hardware.html"> hardware </a> instructions on how to perform the tasks it was designed for. Examples of different types of software include 
+		word processors, operating systems, file management programs and internet browsers.   </p>
+		
+		<h3> Operating Systems </h3>
+		<img id = "peripherals" src=http://2.bp.blogspot.com/-AbcxqMJAgmc/UGC9UpTpZGI/AAAAAAAABM8/UXfXEkwSM6s/s1600/operatingsystem-system+software-computer-free-lessons.jpg" />
+		<p> An Operating System or OS is a software program used to manage the computer\'s hardware and support the computer\'s 
+		basic functions. The operating system acts as a layer between the hardware and computer applications. The operating system 
+		takes care of basic functions such as input, output and memory allocation. Computer applications require an operating system 
+		to run and to communicate between the application and the hardware. Operating systems are found in any device containing a
+		computer such as tablets, cell phones, video game consoles and web servers. <br> <br> Common examples of operating 
+		systems include Mac’s OS X for computers or iOS for cell phones, Microsoft Windows, Blackberry OS, and Android. The 
+		ancestor of most modern day operating systems is Unix. Most successful, modern day operating systems, with the 
+		exception of Windows have derived from Unix based code.  Unix, without a doubt, has been influential in every modern 
+		day operating system.
+		</p>
+		
+		<h3> Applications </h3> 
+		<p> An application is a type of computer software that runs on a computer to perform a useful task. The application itself 
+		runs over top of the operating system or system software. Applications can be created to perform many different tasks 
+		such as word processing, gaming, business software, graphics software, media players and office suites. In todays age 
+		applications can be created for a number of different devices besides computers. Devices such as smartphones, tablets 
+		and laptops. <br> <br> Overall the different types of applications can be broken down and categorized in many different ways. 
+		One of the main ways is by the type of applications however applications can also be categorized by web applications 
+		and web-native applications. Web applications often require internet access to run and are written in HTML, Java or 
+		CSS. Web-native applications however use languages available on the users computer and don’t use the internet. 
+		Thirdly, applications can be divided into two categories by their reasons for use. The first type of applications are for 
+		a widespread market and are general purpose applications, such as a word processor. The second type is for a niche 
+		market and is designed for a certain type of organization or business. These are just three of the most common ways 
+		applications are divided. <br> <br>Not all types of applications are productive to computer users. Malicious software is 
+		used to gather information or gain access to private computer networks. Malware is the general term used to describe 
+		a number of different types of malicious software however different kinds of malicious software perform different tasks. 
+		Other names include viruses, ransomware, bugs, trojan horses and spyware. Many computer companies have developed 
+		anti-virus software. The purpose of this software is to protect computers from malicious software. Many common types 
+		of anti-virus software are Norton and McAfee. Many of these applications also deal with security on desktop computer 
+		and mobile devices. 
+		</p>
+		</div>
+		
+	</body>
+
+</html>
